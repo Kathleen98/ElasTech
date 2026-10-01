@@ -1,0 +1,21 @@
+package org.example.exercicios.estruturasDeDecisao;
+
+import java.math.BigDecimal;
+
+public class saldoConta {
+
+//    Crie variáveis para o saldo da conta (R$ 500.00) e o valor de uma compra (R$ 320.00). Se o saldo for suficiente,
+//    mostre "Compra aprovada!" e o saldo restante. Se não for, mostre "Saldo insuficiente" e quanto está faltando.
+
+    public static void main(String[] args) {
+
+        double balance = 500.00;
+        double purchaseAmount = 320.00;
+
+        if(balance >= purchaseAmount){
+            System.out.println("Saldo suficiente, " + "restam: " + (balance - purchaseAmount));
+        }else{
+            System.out.println("Saldo insuficiente " + "faltam: " + (balance - purchaseAmount));
+        }
+    }
+}
