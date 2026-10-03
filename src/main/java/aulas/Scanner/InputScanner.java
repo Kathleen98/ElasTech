@@ -1,4 +1,4 @@
-package org.example.aulas.Scanner;
+package aulas.Scanner;
 
 import java.util.Scanner;
 

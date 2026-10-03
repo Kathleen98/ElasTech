@@ -1,4 +1,4 @@
-package org.example.exercicios.estruturasDeDecisao;
+package exercicios.aula3EstruturasDeDecisao;
 
 public class EstrutDecisao {
 

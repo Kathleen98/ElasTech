@@ -1,6 +1,4 @@
-package org.example.exercicios.estruturasDeDecisao;
-
-import org.example.exercicios.estruturasDeDecisao.Utilidades;
+package exercicios.aula3EstruturasDeDecisao;
 
 import java.util.Scanner;
 
