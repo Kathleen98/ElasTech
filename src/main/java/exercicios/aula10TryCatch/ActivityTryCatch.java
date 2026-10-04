@@ -3,7 +3,15 @@ package exercicios.aula10TryCatch;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class AtividadeTryCatch {
+public class ActivityTryCatch {
+    public static void main(String[] args) {
+        ActivityTryCatch.positonAray();
+        ActivityTryCatch.returnPosition();
+        ActivityTryCatch.ageCapture();
+        ActivityTryCatch.printName();
+        ActivityTryCatch.divideNumber();
+        ActivityTryCatch.showPositionName();
+    }
 
 //    1 — Faça um programa que peça dois números inteiros e mostre a divisão do primeiro pelo segundo. Se a pessoa digitar 0 no segundo, trate a ArithmeticException e mostre uma mensagem explicando que não dá pra dividir por zero.
 
@@ -11,7 +19,7 @@ public class AtividadeTryCatch {
     public static int num1;
     public static int num2;
 
-    public static void divideNumbers() {
+    public static void positonAray() {
         try {
 
             System.out.println("Informe o primeiro número");
@@ -20,22 +28,17 @@ public class AtividadeTryCatch {
             System.out.println("Informe o segundo número");
             num2 = sc.nextInt();
 
-            if (num2 == 0) {
-                throw new ArithmeticException();
-            }
 
             System.out.println("O resultado da divisão é: " + num1 / num2);
 
         } catch (ArithmeticException ae) {
             System.out.println("Não é possível realizar uma divisão com o número 0");
-        } finally {
-            sc.close();
         }
     }
 
 //  2 — Crie um array com 5 notas. Peça uma posição para a pessoa e mostre a nota daquela posição. Se a posição não existir, trate a ArrayIndexOutOfBoundsException e avise que o array só vai de 0 a 4.
 
-    public static int[] listNumbs = {5, 6, 2, 7, 9, 4};
+    public static int[] listNumbs = {5, 6, 2, 7, 9};
     public static int position;
 
     public static void returnPosition() {
@@ -44,15 +47,10 @@ public class AtividadeTryCatch {
             System.out.println("Informe um número");
             position = sc.nextInt();
 
-            if (position > listNumbs.length) {
-                throw new ArrayIndexOutOfBoundsException();
-            }
 
             System.out.println("O número da lista na posição " + position + " é: " + listNumbs[position]);
         } catch (ArrayIndexOutOfBoundsException aioobe) {
-            System.out.println("O array vai de 0 até " + listNumbs.length);
-        } finally {
-            sc.close();
+            System.out.println("O array vai de 0 até " + (listNumbs.length - 1));
         }
     }
 
@@ -67,9 +65,7 @@ public class AtividadeTryCatch {
             System.out.println("Informe sua idade: ");
             age = sc.nextInt();
 
-            if (!sc.hasNextInt()) {
-            }
-            throw new InputMismatchException();
+            System.out.println("Sua idade é: " + age);
         } catch (InputMismatchException ime) {
             System.out.println("Digite um número para informar sua idade!");
         }
@@ -85,8 +81,6 @@ public class AtividadeTryCatch {
             System.out.println(name.length());
         } catch (NullPointerException npe) {
             System.out.println("O nome não foi preenchido!");
-        }finally {
-            sc.close();
         }
     }
 
@@ -94,15 +88,15 @@ public class AtividadeTryCatch {
 
     public static int num3;
 
-    public static void divideNumber(){
+    public static void divideNumber() {
 
-        try{
+        try {
 
             System.out.println("Informe um número: ");
-            num3= sc.nextInt();
+            num3 = sc.nextInt();
 
-            System.out.println("O resultado da divisão por 100 é: " +  (num3 / 100));
-        }catch(ArithmeticException ae){
+            System.out.println("O resto da divisão por 100 é: " + (100 % num3));
+        } catch (ArithmeticException ae) {
             System.out.println("Informe um número maior que 0");
         }
     }
@@ -112,17 +106,19 @@ public class AtividadeTryCatch {
 
     public static String[] listName = {"Bolota Theodoro Filipi", "Mel", "Amora"};
 
-    public static void showPositionName(){
+    public static void showPositionName() {
 
-        try{
+        try {
 
             System.out.println(listName[5]);
 
-        }catch(ArrayIndexOutOfBoundsException aioobe){
+        } catch (ArrayIndexOutOfBoundsException aioobe) {
             System.out.println("Essa posição não existe");
-        }finally {
-            System.out.println("O programa continua funcionando");
+        } finally {
+
             sc.close();
         }
+
+        System.out.println("O programa continua funcionando");
     }
 }
