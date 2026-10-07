@@ -1,4 +1,4 @@
-package exercicios.aula10TryCatch;
+package exercises.lesson10TryCatch;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

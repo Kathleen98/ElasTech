@@ -1,4 +1,4 @@
-package exercicios.aula3EstruturasDeDecisao;
+package exercises.lesson3DecisonMakingFramework;
 
 import java.util.Scanner;
 

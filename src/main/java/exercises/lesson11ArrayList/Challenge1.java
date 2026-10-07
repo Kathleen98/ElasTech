@@ -1,4 +1,4 @@
-package exercises.lesson11Collections;
+package exercises.lesson11ArrayList;
 
 import java.util.ArrayList;
 import java.util.List;
