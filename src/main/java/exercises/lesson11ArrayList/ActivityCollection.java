@@ -1,9 +1,4 @@
-package exercises.lesson11Collections;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+package exercises.lesson11ArrayList;
 
 public class ActivityCollection {
 

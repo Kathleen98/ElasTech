@@ -1,12 +1,12 @@
-package lessons.lesson11Collections;
+package lessons.lesson11ArrayListHashMap;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class LessonCollections {
+public class LessonArrayList {
 
     public static void main(String[] args) {
-        LessonCollections lesson = new LessonCollections();
+        LessonArrayList lesson = new LessonArrayList();
         lesson.addName();
         System.out.println(lesson.names);
         lesson.addMultipleNames();

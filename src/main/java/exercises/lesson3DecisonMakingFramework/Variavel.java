@@ -1,4 +1,4 @@
-package exercicios.aula3EstruturasDeDecisao;
+package exercises.lesson3DecisonMakingFramework;
 
 public class Variavel {
     public static void main(String[] args) {
