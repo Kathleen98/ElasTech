@@ -1,4 +1,4 @@
-package exercises.lesson12Collections;
+package exercises.lesson12HashSet;
 
 import java.util.HashSet;
 import java.util.List;

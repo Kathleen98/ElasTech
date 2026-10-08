@@ -1,4 +1,4 @@
-package exercises.lesson12Collections;
+package exercises.lesson12HashSet;
 
 public class Exercises {
     public static void main(String[] args) {
