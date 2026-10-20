@@ -1,0 +1,46 @@
+Para cada código abaixo, diga qual princípio do SOLID está sendo violado e explique como você corrigiria.
+
+
+a)
+java
+class Relatorio {
+    void calcularTotais() { /* ... */ }
+    void formatarEmPdf() { /* ... */ }
+    void salvarNoDisco() { /* ... */ }
+    void enviarPorEmail() { /* ... */ }
+}
+
+R: Princípio da Responsabilidade Única, isolaria cada métodos em uma classe separada.
+
+
+b)
+java
+class EnviadorEmail {
+    void enviar(String tipo) {
+        if (tipo.equals("aniversario")) {
+            System.out.println("Feliz aniversário!");
+        } else if (tipo.equals("seguranca")) {
+            System.out.println("Alerta de segurança!");
+        } else if (tipo.equals("promocao")) {
+            System.out.println("Promoção imperdível!");
+        }
+    }
+}
+
+R: OCP, criaria uma interface para definir contrato de notificação, criação de classes específicas para cada tipo de e-mail, uma classe responsável pelo envio do e-mail, polimorfismo decidindo qual classe de email rodar.
+
+
+c)
+java
+class PedidoService {
+    private MySQLRepositorio repo = new MySQLRepositorio();
+
+    void finalizar() {
+        repo.salvar();
+    }
+}
+
+R: Princípio da Inversão de dependência, criaria uma interface com todos os métodos necessários, uma classe apartada implementando a interface usando override para sobrescrever os métodos.
+
+
+

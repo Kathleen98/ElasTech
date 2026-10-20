@@ -1,4 +1,6 @@
 package lessons.lesson13Interface;
 
-public class animal {
+public interface Animal {
+
+    void makeSound();
 }

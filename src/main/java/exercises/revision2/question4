@@ -1,0 +1,8 @@
+Explique quem pode acessar um atributo ou método declarado com cada modificador:
+
+
+a) private - apenas
+b) default (sem modificador)
+c) protected
+d) public
+

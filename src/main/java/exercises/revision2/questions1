@@ -1,0 +1,12 @@
+a) Explique, com suas palavras, o que é abstração em programação orientada a objetos.
+
+Abstração é a capacidade que o código tem de ocultar detalhes complexos do código.
+Eu falo o que eu preciso, exemplo, um método que realize sign-in, qual lib vou usar, como será implementado é outra parte do código.
+
+
+b) Qual a diferença entre abstração e encapsulamento?
+A abstração é como um pedido, preciso de uma rota sign-in, o encapsulamento é onde informo como vai acontecer, o que devo proteger.
+
+
+c) Quando você usa lista.add("Ana"), você sabe como o Java guarda esse elemento na memória? Por que isso é um exemplo de abstração?
+Ele guarda uma referência do valor na memória, essa referência aponta para onde o valor está. É um exemplo de abstração porque o método add é universal, o que é entregue para o usuário é uma interface que esconde a complexidade por baixo dos panos.
